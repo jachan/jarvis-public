@@ -1,0 +1,7 @@
+<% if temperature %>
+	<b>Temperature: </b><%= temperature.temperature %><br>
+	<b>Humidity: </b><%= temperature.humidity %><br>
+	<b>Time: </b><%= temperature.created_at.strftime("%r") %>
+<% else %>
+	<h4>No Temperature has been recorded yet!</h4>
+<% end %>

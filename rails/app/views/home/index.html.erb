@@ -1,0 +1,16 @@
+<section class="row">
+  <div class="col-md-12">
+    <h1>Home Page</h1>
+    <p class="lead">
+      This will be the landing page for all of Jarvis. You will be able to see a raw feed of the events coming in from the microcontrollers. As an example, temperature will be listed below.
+    </p>
+  </div>
+</section>
+<section class="row">
+  <div class="col-md-4">
+    <div class="well">
+      <h3>Last Temperature</h3>
+      <%= render partial: "shared/temperature", locals: { temperature: @temperature } %>
+    </div>
+  </div>
+</section>
